@@ -24,13 +24,24 @@ This project is a simple offline game. The game is a platformer with a static ca
 
 ## Building: 
 
-+ Project->Properties->C++ Language Standard->ISO C++17 Standard (/std:c++17) or above;
+Path to the SFML library folder: C:\Projects_C++\SFML_Game\SFML_Game\sfml\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1
 
-+ Project->Build Customizations->masm(.targets, .props);
+Visual Studio -> Run Debug x64
 
-+ Solution Explorer->Asm_Tools.asm->Properties->Configuration Properties->General->Item Type->Microsoft Macro Assembler;
+Visual Studio -> Run Release x64
 
-+ Solution Explorer->Asm_Tools.asm->File->Save Asm_Tools.asm as->Save with Encoding->Encoding->Unicode (UTF-8 without signature) - Codepage 65001;
+Path to the SFML 2.5.1 (Visual C++ 15 (2017) - 64-bit) library folder: 
+C:\Projects_C++\SFML_Game\SFML_Game\sfml\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1
+
+Catalog of books with folders with CMakeLists.txt
+
+cmake -S . -B build
+
+cmake --build build --config Release
+
+cmake --build build --config Debug
+
+Project Bee-at-work to assign as a startup project
 
 ## Management:
 + Enter - enter
