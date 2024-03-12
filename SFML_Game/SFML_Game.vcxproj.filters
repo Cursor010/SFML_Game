@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="AssistanceResources.h">
+      <Filter>AssistanceResources</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="Health.h">
+      <Filter>Health</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>TextRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsBar.h">
+      <Filter>OptionsBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>Explosion</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>AssetManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssistanceResources.cpp">
+      <Filter>AssistanceResources</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="Health.cpp">
+      <Filter>Health</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>TextRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsBar.cpp">
+      <Filter>OptionsBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>Explosion</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>AssetManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{55d99681-f22a-4056-bc15-d980b98eb99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{23935263-197d-4506-a4c9-2db34e083025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{58026200-9ce6-417a-ab85-ff3f2faa0d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{f3a566e8-5382-4ee9-94d9-41f863075c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{2a5175a7-0fce-4a9b-b9fe-467a251826ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextRenderer">
+      <UniqueIdentifier>{b53c8435-461b-4c2f-8b65-13bd1ce95fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Explosion">
+      <UniqueIdentifier>{41b9797f-ed67-4bd7-ac7c-db0f11c95839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{e257390f-b524-4a09-be24-2e9bb36c800d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OptionsBar">
+      <UniqueIdentifier>{56bd77a5-0d38-4f46-892c-63107f560b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{000e9fdc-bd95-4949-813a-b684f00e46bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{e5a7cb99-d750-4247-9b19-c549c86dd1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssistanceResources">
+      <UniqueIdentifier>{16ea9b97-5662-4cb6-8a3d-16800f275d84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animator">
+      <UniqueIdentifier>{677599a5-eb6c-42e3-b55f-1f869a1b5134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Health">
+      <UniqueIdentifier>{716fee17-0781-44a2-a8ab-3de2f1aaca54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{a35abca4-10e5-4a3c-8f82-70b9686b6c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{cd5d614c-941c-4735-851b-b174ab28b56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager">
+      <UniqueIdentifier>{974ecaab-35d8-46e0-89dd-bf11976ea951}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
