@@ -41,7 +41,7 @@ cmake --build build --config Release
 
 cmake --build build --config Debug
 
-Project Bee-at-work to assign as a startup project
+Project DETH JUMP to assign as a startup project
 
 ## Management:
 + Enter - enter
