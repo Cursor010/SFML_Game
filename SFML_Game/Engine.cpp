@@ -193,8 +193,6 @@ void Engine::updateEnemies(sf::Time const& deltaTime)
 				Player_->setOnGroundState(false);
 			}
 
-<<<<<<< HEAD
-=======
 			Player_->setState(Player::State::STAY);
 			if (enemy->getMovement())
 			{
@@ -209,7 +207,6 @@ void Engine::updateEnemies(sf::Time const& deltaTime)
 			Player_->setLastPosition(static_cast<float>(Player_->getSpriteObject().getPosition().y));
 			Player_->setOnGroundState(false);
 
->>>>>>> 27f9f87af917bdf64ac487e6d3b9f7bb01bcb1f0
 			Explosion_ = std::make_unique<Explosion>(*game_window_, sf::Vector2f(Player_->getSpriteObject().getPosition().x, Player_->getSpriteObject().getPosition().y), "../images/explo.png", 0.5f, sf::Vector2i(350, 515), sf::Vector2i(515, 1), 11);
 
 			enemy->setDead(true);
