@@ -181,14 +181,20 @@ void Engine::updateEnemies(sf::Time const& deltaTime)
 		enemy->update(deltaTime);
 		if (enemy->checkInteractions(*Player_, *Health_, enemy->getSpriteObject(), deltaTime))
 		{
-			Player_->setRepulseState(true);
-			Player_->setStepy(0);
-
-			if (Player_->getRepulseState())
+			if (!Player_->getSquatState())
 			{
-				Player_->setSquatState(false);
+				Player_->setRepulseState(true);
+				Player_->setStepy(0);
+
+				Player_->setState(enemy->getMovement() ? Player::State::MOVE_RIGHT : Player::State::MOVE_LEFT, 0.5f);
+
+				Player_->setJumpState(true);
+				Player_->setLastPosition(static_cast<float>(Player_->getSpriteObject().getPosition().y));
+				Player_->setOnGroundState(false);
 			}
 
+<<<<<<< HEAD
+=======
 			Player_->setState(Player::State::STAY);
 			if (enemy->getMovement())
 			{
@@ -203,6 +209,7 @@ void Engine::updateEnemies(sf::Time const& deltaTime)
 			Player_->setLastPosition(static_cast<float>(Player_->getSpriteObject().getPosition().y));
 			Player_->setOnGroundState(false);
 
+>>>>>>> 27f9f87af917bdf64ac487e6d3b9f7bb01bcb1f0
 			Explosion_ = std::make_unique<Explosion>(*game_window_, sf::Vector2f(Player_->getSpriteObject().getPosition().x, Player_->getSpriteObject().getPosition().y), "../images/explo.png", 0.5f, sf::Vector2i(350, 515), sf::Vector2i(515, 1), 11);
 
 			enemy->setDead(true);
