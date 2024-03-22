@@ -294,8 +294,6 @@ void Engine::GameMenu()
 	auto width = static_cast<float>(sf::VideoMode::getDesktopMode().width);
 	auto height = static_cast<float>(sf::VideoMode::getDesktopMode().height);
 
-	float alpha = 255;
-
 	menu_window.create(sf::VideoMode::getDesktopMode(), L"DEATH GUMP", sf::Style::Fullscreen);
 
 	SetWindowLong(menu_window.getSystemHandle(), GWL_EXSTYLE, GetWindowLong(menu_window.getSystemHandle(), GWL_EXSTYLE) | WS_EX_LAYERED);
@@ -308,11 +306,6 @@ void Engine::GameMenu()
 
 	std::vector<sf::String> name_menu{ L"START", L"SETTINGS", L"ABOUT", L"EXIT" };
 	Menu menu(menu_window, 0, (300 * height) / 720, static_cast<int>((37 * width) / 1280), static_cast<int>((67 * height) / 720), name_menu);
-
-	sf::Sprite backgroundBlack;
-	backgroundBlack.setColor(sf::Color(255, 255, 255, 255));
-	backgroundBlack.setTexture(AssetManager::GetTexture("../images/black.jpg"));
-	backgroundBlack.setTextureRect(sf::IntRect(0, 0, static_cast<int>(width), static_cast<int>(height)));
 
 	sf::RectangleShape background(sf::Vector2f(width, height));
 	background.setTexture(&AssetManager::GetTexture("../images/menu.png"));
@@ -393,18 +386,11 @@ void Engine::GameMenu()
 			tm = sf::milliseconds(0);
 		}
 
-		if (alpha > 0)
-		{
-			alpha -= 0.05f;
-			backgroundBlack.setColor(sf::Color(255, 255, 255, static_cast<unsigned char>(alpha)));
-		}
-
 		menu_window.clear();
 		menu_window.draw(background);
 		titul->draw(menu_window);
 		best_score->draw(menu_window);
 		menu.draw();
-		menu_window.draw(backgroundBlack);
 		menu_window.display();
 	}
 }
@@ -423,7 +409,7 @@ void Engine::Options()
 
 	options_window.create(sf::VideoMode::getDesktopMode(), L"Settings", sf::Style::Fullscreen);
 
-	sf::RectangleShape background_opt(sf::Vector2f(1920, 1080));
+	sf::RectangleShape background_opt(sf::Vector2f(static_cast<float>(sf::VideoMode::getDesktopMode().width), static_cast<float>(sf::VideoMode::getDesktopMode().height)));
 	background_opt.setTexture(&AssetManager::GetTexture("../images/menu.png"));
 
 	std::unique_ptr<TextRenderer> sound_titul = std::make_unique<TextRenderer>(std::string("../fonts/rs.ttf"), static_cast<unsigned int>((50 * options_window.getSize().x) / 1280),
